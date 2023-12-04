@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# myProjectrun
+#
+# Clean, build and start server
+#
+# Daniel Morris <danmor@umich.edu>
+# Stop on errors, print commands
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+
+source env/bin/activate
+#uncomment next two lines if you are installing this on your device
+#pip install -r requirements.txt 
+#pip install -e . 
+set -Eeuo pipefail
+set -x
+
+# Clean
+rm -rf portfolio/html
+
+# Build
+genweb portfolio
+
+# Serve
+cd portfolio/html
+python3 -m http.server 8000

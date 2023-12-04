@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="icon" type="image/x-icon" href="image/images.jpg" >
+    <title>Danmor Portfolio</title>
+</head>
+
+<body>
+    <main class = "content">
+        
+        <div role = "banner">
+            <h1>Daniel Morris</h1>
+        </div>
+        <div class = "skipmain">
+            <a href="#main">Skip to main content</a>
+        </div>
+        <div class = nav_bar>
+            <a href="/">Main</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <div id = "main">
+            <h2>About Me</h2>
+            <p>
+                I am currently a Junior at The University of Michigan's College of Engineering studying Computer Science. 
+                Last Summer I worked with JPMorgan Chase & Co as an ABP Software Engineering Fellow where I was given an introduction
+                to Backend Programming and corporate workflows. I am now working at Amazon as a Junior Software Developer. 
+                I am in my exploration phase trying to explore all types of technology to see what I like the best. As a result I am looking for further oppurtunities.
+            </p>
+        </div>
+
+        <div class = "schools">
+            <h2>Education</h2>
+            {%for school in schools %}
+        
+            <div id = school>
+                <div id = school_img>
+                    <img src="{{school.img_url}}" alt="">
+                </div>
+                <h3>{{school.name}}</h3>
+                    {%if school.transferred is true %}
+                        - I tranferred from here
+                    {%endif %}
+                <p>
+                    <div>{{school.degree}}</div>
+                    <div>{{school.graduation}}</div>
+                </p>
+            </div>
+            {%endfor %}
+        </div>
+
+        <div class = exp_list>
+            <h2>Experiences</h2>
+            {%for exp in experiences %}
+            <div id  = exp>
+                <img src="{{exp.logo}}" alt="">
+                <h3>{{exp.employer}}</h3>
+                <p>{{exp.title}}{{exp.date}}</p>
+            </div>        
+            <h4>Skills</h4>
+                <div class = "grid_container">
+                    {%for skill in exp.skills %}
+                    <li>{{skill}}</li>
+                    {%endfor%}
+                </div>
+            {%endfor %} 
+        </div>
+        <div class = interests>
+            <h2>Interests</h2>
+            <ul>
+                {%for interest in interests %}
+                <li>
+                    {{interest.des}}
+                    <div class = "img_interest">
+                        <img src="{{interest.img_url}}" alt="{{interest.des}}">
+                    </div>
+                </li>
+                {%endfor %}
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

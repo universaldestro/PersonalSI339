@@ -1,0 +1,9 @@
+pyproject.toml
+genweb/__init__.py
+genweb/__main__.py
+genweb.egg-info/PKG-INFO
+genweb.egg-info/SOURCES.txt
+genweb.egg-info/dependency_links.txt
+genweb.egg-info/entry_points.txt
+genweb.egg-info/requires.txt
+genweb.egg-info/top_level.txt

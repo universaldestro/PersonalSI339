@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# insta485run
+#
+# Clean, build and start server
+#
+# Daniel Morris <danmor@umich.edu>
+
+
+# Stop on errors, print commands
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+set -x
+pytest tests/
+pycodestyle insta485generator
+pydocstyle insta485generator
+pylint insta485generator
+rm -rf insta485/html
+insta485generator insta485
+html5validator --ignore JAVA_TOOL_OPTIONS --root html
+html5validator --ignore JAVA_TOOL_OPTIONS --root

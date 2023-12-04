@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css" >
+    <link rel="stylesheet" href="/css/style.css" >
+    <link rel="stylesheet" href="/css/projects.css" >
+    <link rel="icon" type="image/x-icon" href="image/images.jpg" >
+    <title>Danmor Portfolio</title>
+</head>
+
+
+
+<body>
+    <main class = "content">
+        
+        <div role = "banner">
+            <h1>Daniel Morris</h1>
+        </div>
+        <div class = "skipmain">
+            <a href="#main">Skip to main content</a>
+        </div>
+        <div class = nav_bar>
+            <a href="/">Main</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    <div class="projects" id = "main"> 
+        {%for project in projects%}
+            <div id = "project">
+                <h2></h2><a href="{{project.link}}">
+                   {{project.title}} 
+                </a></h2>
+                
+                <h3>{{project.date}} - {{project.type}}</h3>
+                <div id = "description">
+                    {{project.description}}
+                </div>
+                <div id = grid_container>
+                    <ol>
+                        {%for skill in project.skills%}
+                        <li id = skill>
+                        {{skill}}  
+                        </li>
+                        {%endfor%} 
+                    </ol>
+                </div>
+
+
+            </div>
+        {%endfor%}
+    </div>
+    </main>
+</body>
+</html>
