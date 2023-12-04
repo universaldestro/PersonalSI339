@@ -70,7 +70,7 @@
     }
   },
   {
-    "url": "/projects.html/",
+    "url": "/projects/",
     "template": "projects.html",
     "context": {
       "projects": [
