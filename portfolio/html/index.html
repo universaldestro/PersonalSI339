@@ -3,153 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css" >
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="icon" type="image/x-icon" href="image/images.jpg" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/images.jpg">
     <title>Danmor Portfolio</title>
 </head>
 
 <body>
-    <main class = "content">
-        
-        <div role = "banner">
-            <h1>Daniel Morris</h1>
-        </div>
-        <div class = "skipmain">
-            <a href="#main">Skip to main content</a>
-        </div>
-        <div class = nav_bar>
-            <a href="/">Main</a>
-            <a href="/projects/">Projects</a>
-        </div>
-        <div id = "main">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Daniel Morris</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects/">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <section id="about">
             <h2>About Me</h2>
             <p>
-                I am currently a Junior at The University of Michigan's College of Engineering studying Computer Science. 
-                Last Summer I worked with JPMorgan Chase & Co as an ABP Software Engineering Fellow where I was given an introduction
-                to Backend Programming and corporate workflows. I am now working at Amazon as a Junior Software Developer. 
-                I am in my exploration phase trying to explore all types of technology to see what I like the best. As a result I am looking for further oppurtunities.
+                I am currently a Junior at The University of Michigan's College of Engineering studying Computer Science. Last Summer I worked with JPMorgan Chase & Co as an ABP Software Engineering Fellow where I was given an introduction
+                to Backend Programming and corporate workflows. I am now working at Amazon as a Junior Software Developer. I am in my exploration phase trying to explore all types of technology to see what I like the best. As a result I am looking for further opportunities.
             </p>
-        </div>
+        </section>
 
-        <div class = "schools">
+        <section id="education">
             <h2>Education</h2>
-            
-        
-            <div id = school>
-                <div id = school_img>
-                    <img src="/images/U-M-logo-preview.jpg" alt="">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header">University of Michigan - COE</div>
+                        <div class="card-body">
+                            <h5 class="card-title">BSE in Computer Science</h5>
+                            <p class="card-text">Aug 2021 - April 2022</p>
+                        </div>
+                    </div>
                 </div>
-                <h3>University of Michigan - COE</h3>
-                    
-                <p>
-                    <div>BSE in Compter Science</div>
-                    <div>Aug 2021 - April 2022</div>
-                </p>
-            </div>
-            
-        
-            <div id = school>
-                <div id = school_img>
-                    <img src="/images/UMDlogo.png" alt="">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header">University of Michigan-Dearborn</div>
+                        <div class="card-body">
+                            <h5 class="card-title">BS in Computer Science</h5>
+                            <p class="card-text">Aug 2021 - April 2022</p>
+                            <p class="card-text">Transferred from here</p>
+                        </div>
+                    </div>
                 </div>
-                <h3>University of Michigan-Dearborn</h3>
-                    
-                        - I tranferred from here
-                    
-                <p>
-                    <div>BS in Compter Science</div>
-                    <div>Aug 2021 - April 2022</div>
-                </p>
             </div>
-            
-        </div>
+        </section>
 
-        <div class = exp_list>
+        <section id="experiences">
             <h2>Experiences</h2>
-            
-            <div id  = exp>
-                <img src="/images/JPMC.png" alt="">
-                <h3>JPMorgan Chase &amp; Co</h3>
-                <p>ABP Software Engineering FellowJune 2023 - August 2023</p>
-            </div>        
-            <h4>Skills</h4>
-                <div class = "grid_container">
-                    
+            <div class="card-deck">
+                <div class="card">
+                    <img src="/images/JPMC.png" class="card-img-top" alt="JPMorgan Chase & Co">
+                    <div class="card-body">
+                        <h5 class="card-title">JPMorgan Chase & Co</h5>
+                        <p class="card-text">ABP Software Engineering Fellow<br>June 2023 - August 2023</p>
+                    </div>
                 </div>
-            
-            <div id  = exp>
-                <img src="/images/DTE.png" alt="">
-                <h3>DTE Energy</h3>
-                <p>IT InternMay 2022 - August 2022</p>
-            </div>        
-            <h4>Skills</h4>
-                <div class = "grid_container">
-                    
+                <div class="card">
+                    <img src="/images/DTE.png" class="card-img-top" alt="DTE Energy">
+                    <div class="card-body">
+                        <h5 class="card-title">DTE Energy</h5>
+                        <p class="card-text">IT Intern<br>May 2022 - August 2022</p>
+                    </div>
                 </div>
-            
-            <div id  = exp>
-                <img src="/images/Accenture.png" alt="">
-                <h3>Accenture</h3>
-                <p>ExternMay 2022</p>
-            </div>        
-            <h4>Skills</h4>
-                <div class = "grid_container">
-                    
+                <div class="card">
+                    <img src="/images/Accenture.png" class="card-img-top" alt="Accenture">
+                    <div class="card-body">
+                        <h5 class="card-title">Accenture</h5>
+                        <p class="card-text">Extern<br>May 2022</p>
+                    </div>
                 </div>
-            
-            <div id  = exp>
-                <img src="/images/UMDLogo.png" alt="">
-                <h3>University of Michigan Dearborn</h3>
-                <p>Supplemental Instruction Leader/Supplemental Instruction BackendDecember 2021 – April 2021</p>
-            </div>        
-            <h4>Skills</h4>
-                <div class = "grid_container">
-                    
+                <div class="card">
+                    <img src="/images/UMDLogo.png" class="card-img-top" alt="University of Michigan Dearborn">
+                    <div class="card-body">
+                        <h5 class="card-title">University of Michigan Dearborn</h5>
+                        <p class="card-text">Supplemental Instruction Leader/Supplemental Instruction Backend<br>December 2021 – April 2021</p>
+                    </div>
                 </div>
-             
-        </div>
-        <div class = interests>
+            </div>
+        </section>
+
+        <section id="interests">
             <h2>Interests</h2>
-            <ul>
-                
-                <li>
-                    anime
-                    <div class = "img_interest">
-                        <img src="/images/kilik.jpg" alt="anime">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="/images/kilik.jpg" class="card-img-top" alt="anime">
+                        <div class="card-body">
+                            <h5 class="card-title">Anime</h5>
+                        </div>
                     </div>
-                </li>
-                
-                <li>
-                    basketball
-                    <div class = "img_interest">
-                        <img src="/images/basketball.jpg" alt="basketball">
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="/images/basketball.jpg" class="card-img-top" alt="basketball">
+                        <div class="card-body">
+                            <h5 class="card-title">Basketball</h5>
+                        </div>
                     </div>
-                </li>
-                
-                <li>
-                    books
-                    <div class = "img_interest">
-                        <img src="/images/book.png" alt="books">
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="/images/book.png" class="card-img-top" alt="books">
+                        <div class="card-body">
+                            <h5 class="card-title">Books</h5>
+                        </div>
                     </div>
-                </li>
-                
-                <li>
-                    hex editing
-                    <div class = "img_interest">
-                        <img src="/images/hex.png" alt="hex editing">
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="/images/hex.png" class="card-img-top" alt="hex editing">
+                        <div class="card-body">
+                            <h5 class="card-title">Hex Editing</h5>
+                        </div>
                     </div>
-                </li>
-                
-                <li>
-                    Video Games
-                    <div class = "img_interest">
-                        <img src="/images/wisp.jpg" alt="Video Games">
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="/images/wisp.jpg" class="card-img-top" alt="Video Games">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Games</h5>
+                        </div>
                     </div>
-                </li>
-                
-            </ul>
-        </div>
+                </div>
+            </div>
+        </section>
     </main>
-</body>
-</html>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 Danmor Portfolio.
