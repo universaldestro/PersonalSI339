@@ -3,152 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css" >
-    <link rel="stylesheet" href="css/style.css" >
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Danmor Portfolio</title>
 </head>
-
 <body>
-    <main class = "content">
-        
-        <div role = "banner">
-            <h1>Daniel Morris</h1>
-        </div>
-        <div class = "skipmain">
-            <a href="#main">Skip to main content</a>
-        </div>
-        <div class = nav_bar>
-            <a href="index.html">Main</a>
-            <a href="project.html">Projects</a>
-        </div>
-        <div id = "main">
-            <h2>About Me</h2>
-            <p>
-                I am currently a Junior at The University of Michigan's College of Engineering studying Computer Science. 
-                Last Summer I worked with JPMorgan Chase & Co as an ABP Software Engineering Fellow where I was given an introduction
-                to Backend Programming and corporate workflows. I am now working at Amazon as a Junior Software Developer. 
-                I am in my exploration phase trying to explore all types of technology to see what I like the best. As a result I am looking for further oppurtunities.
+    <header class="bg-primary text-white text-center p-3 mb-3">
+        <div class="container">
+            <h1 class="display-4">Daniel Morris</h1>
+            <p class="lead">Senior at The University of Michigan's College of Engineering</p>
+            <p class="mb-0">danmor@umich.edu | (248) 954-9062</p>
+            <p class="mb-0">
+                <a href="https://www.linkedin.com/in/your-profile" class="text-white">LinkedIn</a> | 
+                <a href="https://github.com/universaldestro" class="text-white">Github</a> | 
+                <a href="https://credly.com/users/danmor" class="text-white">Credly</a>
             </p>
         </div>
+    </header>
 
-        <div class = "schools">
-            <h2>Education</h2>
-            
-        
-            <div id = school>
-                <div id = school_img>
-                    <img src="images/U-M-logo-preview.jpg" alt="">
-                </div>
-                <h3>University of Michigan - COE</h3>
-                    
-                <p>
-                    <div>BSE in Compter Science</div>
-                    <div>Aug 2021 - April 2022</div>
-                </p>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Main</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                </ul>
             </div>
-            
-        
-            <div id = school>
-                <div id = school_img>
-                    <img src="images/UMDlogo.png" alt="">
-                </div>
-                <h3>University of Michigan-Dearborn</h3>
-                    
-                        - I tranferred from here
-                    
-                <p>
-                    <div>BS in Compter Science</div>
-                    <div>Aug 2021 - April 2022</div>
-                </p>
-            </div>
-            
-        </div>
+        </nav>
 
-        <div class = exp_list>
-            <h2>Experiences</h2>
-            
-            <div id  = exp>
-                <img src="images/JPMC.png" alt="">
-                <h3>JPMorgan Chase &amp; Co</h3>
-                <p>ABP Software Engineering FellowJune 2023 - August 2023</p>
-            </div>        
-            <h4>Skills</h4>
-                <div class = "grid_container">
-                    
+        <main id="main">
+            <section class="mb-5">
+                <h2>About Me</h2>
+                <p>
+                    I am currently a Senior at The University of Michigan's College of Engineering studying Computer Science. 
+                    I am now working at Amazon as a Junior Software Developer. 
+                    I am in my exploration phase trying to explore all types of technology to see what I like the best. As a result, I am looking for further opportunities.
+                </p>
+            </section>
+
+            <section id="education" class="mb-5">
+                <h2>Education</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <img src="images/U-M-logo-preview.jpg" class="card-img-top" alt="University of Michigan - COE">
+                            <div class="card-body">
+                                <h3 class="card-title">University of Michigan - COE</h3>
+                                <p class="card-text">
+                                    BSE in Computer Science<br>
+                                    Expected Spring 2025
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <img src="images/UMDlogo.png" class="card-img-top" alt="University of Michigan-Dearborn">
+                            <div class="card-body">
+                                <h3 class="card-title">University of Michigan-Dearborn</h3>
+                                <p class="card-text">
+                                    Dean’s List | 2021-2022<br>
+                                    - I transferred from here
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
-            <div id  = exp>
-                <img src="images/DTE.png" alt="">
-                <h3>DTE Energy</h3>
-                <p>IT InternMay 2022 - August 2022</p>
-            </div>        
-            <h4>Skills</h4>
-                <div class = "grid_container">
-                    
+            </section>
+
+            <section id="experience" class="mb-5">
+                <h2>Experiences</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Amazon | Junior Developer</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">October 2023 - Present | Detroit, MI</h4>
+                                <p class="card-text">
+                                    Developing authorization service for Amazon Seller Central, leveraging Java, AWS, and Node.js technologies.<br>
+                                    Developed APIs in Java using DynamoDB and CDK to improve Multihread locking performance.<br>
+                                    Migrated crucial Adapter of a service reaching highs of 40,000 tps from one service to another using SOP.
+                                    Responsible for systems monitoring, live deployments, continuous integration, unit tests, and integration tests.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">JPMorgan Chase & Co | Software Development Intern</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">June 2023 – August 2023 | Polaris Hub/Plano Hub</h4>
+                                <p class="card-text">
+                                    Created a web application catering to banking credentials management using React and Spring Boot.
+                                    Verified API endpoints, data integrity, and error handling mechanisms using Postman.
+                                    Developed a competitive AI system in Java using the external AI framework Robocode.
+                                    Collaborated with a team to design a comprehensive fellowship program aimed at supporting a minority depository institution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
-            <div id  = exp>
-                <img src="images/Accenture.png" alt="">
-                <h3>Accenture</h3>
-                <p>ExternMay 2022</p>
-            </div>        
-            <h4>Skills</h4>
-                <div class = "grid_container">
-                    
-                </div>
-            
-            <div id  = exp>
-                <img src="images/UMDLogo.png" alt="">
-                <h3>University of Michigan Dearborn</h3>
-                <p>Supplemental Instruction Leader/Supplemental Instruction BackendDecember 2021 – April 2021</p>
-            </div>        
-            <h4>Skills</h4>
-                <div class = "grid_container">
-                    
-                </div>
-             
-        </div>
-        <div class = interests>
-            <h2>Interests</h2>
-            <ul>
-                
-                <li>
-                    anime
-                    <div class = "img_interest">
-                        <img src="images/kilik.jpg" alt="anime">
-                    </div>
-                </li>
-                
-                <li>
-                    basketball
-                    <div class = "img_interest">
-                        <img src="images/basketball.jpg" alt="basketball">
-                    </div>
-                </li>
-                
-                <li>
-                    books
-                    <div class = "img_interest">
-                        <img src="images/book.png" alt="books">
-                    </div>
-                </li>
-                
-                <li>
-                    hex editing
-                    <div class = "img_interest">
-                        <img src="images/hex.png" alt="hex editing">
-                    </div>
-                </li>
-                
-                <li>
-                    Video Games
-                    <div class = "img_interest">
-                        <img src="images/wisp.jpg" alt="Video Games">
-                    </div>
-                </li>
-                
-            </ul>
-        </div>
-    </main>
+            </section>
+
+            <section id="projects" class="mb-5">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="projects.html">Open Catsket</a></li>
+                    <p>Here is the gold Gold for open-catsket. I am responsible for the box shift valid collisions and backtracking efforts.</p>
+                </ul>
+            </section>
+
+            <section id="skills" class="mb-5">
+                <h2>Technical Skills</h2>
+                <p>
+                    Python (intermediate), BeautifulSoup, NumPy, Pandas, Regex, Selenium, C#, C++, C (intermediate), Microsoft Office Applications (intermediate), Java (beginner), Javascript (beginner), CISCO Cybersecurity Certification, Linux terminal commands, Git version control, VS Code, R Studio, Unit Testing, Debugging, Terraform, Robocode, Jules Pattern, AWS-cli, IntelliJ, Eclipse, KickStart-cli, Bitbucket, HTML/CSS, Spring Boot, MapReduce, Multithreading, Multiprocessing, CDK, Jira, Unity, CI/CD
+                </p>
+            </section>
+
+            <section id="coursework" class="mb-5">
+                <h2>Relevant Coursework</h2>
+                <p>
+                    Data Structures and Algorithms, Discrete Math, Cybersecurity Principles, Web Systems, Computer Architecture, Data-Oriented Programming, Web Design, Calculus Based Physics, JPMorgan Chase & Co Forage – Software Engineering, Software Engineering Lite, Computer Security, Computer Game Design, Web Systems, Intro Computer Organization, User Interface Development
+                </p>
+            </section>
+
+            <section id="extracurriculars" class="mb-5">
+                <h2>Extracurriculars</h2>
+                <p>
+                    National Society of Black Engineers | 2022<br>
+                    LGBTQ+ Michigan | 2022<br>
+                    SI Instructor University of Michigan - Dearborn | 2022<br>
+                    Student Government | Fellow | 2021 – 2022<br>
+                    Developers of Dearborn | Design Lead | 2021 – 2022<br>
+                    Business Professionals of America | 2019- 2021<br>
+                    Wolverine Pathways | 2018-2021<br>
+                    Midnight Golf | 2020-2021<br>
+                    MHacks | 2024<br>
+                    WolSec | 2024<br>
+                    Student Activities Board | 2021-2022<br>
+                    Accenture Externship
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,89 +1,15 @@
-/* Reset Styles */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
+/* Custom styles for the projects section */
 
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Page Styles */
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Banner Styles */
-div[role="banner"] {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Skip to Main Content Link Styles */
-.skipmain {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Navigation Bar Styles */
-.nav_bar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-.nav_bar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-/* Projects Section Styles */
-#main {
-    margin-top: 20px;
-}
-
-#project {
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    padding: 10px;
-}
-
-#project a {
+.card-title a {
     color: #3498db;
     text-decoration: none;
 }
 
-#project a:hover {
+.card-title a:hover {
     text-decoration: underline;
 }
 
-#description {
-    margin-top: 10px;
-}
-
-#grid_container ol {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
-}
-
-#grid_container li {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+.badge-secondary {
+    font-size: 0.85rem;
+    margin: 2px;
 }

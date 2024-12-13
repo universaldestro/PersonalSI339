@@ -3,191 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css" >
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" href="css/projects.css" >
-    <link rel="icon" type="image/x-icon" href="image/images.jpg" >
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="icon" type="image/x-icon" href="images/images.jpg">
     <title>Danmor Portfolio</title>
 </head>
-
-
-
 <body>
-    <main class = "content">
-        
-        <div role = "banner">
-            <h1>Daniel Morris</h1>
-        </div>
-        <div class = "skipmain">
-            <a href="#main">Skip to main content</a>
-        </div>
-        <div class = nav_bar>
-            <a href="index.html">Main</a>
-            <a href="project.html">Projects</a>
-        </div>
-    <div class="projects" id = "main"> 
-        
-            <div id = "project">
-                <h2></h2><a href="https://github.com/universaldestro/stock-webscraping">
-                   Trading Algorithm 
-                </a></h2>
-                
-                <h3> January 2022 - Current - personal</h3>
-                <div id = "description">
-                    I created a webscraping Algorithm in Python 3.0 that pulls data from yahoo finance to predict trends in the stock market. Data is scraped in reals time.
-                </div>
-                <div id = grid_container>
-                    <ol>
-                        
-                        <li id = skill>
-                        VsCode  
-                        </li>
-                        
-                        <li id = skill>
-                        Beautiful Soup  
-                        </li>
-                        
-                        <li id = skill>
-                        Requests  
-                        </li>
-                        
-                        <li id = skill>
-                        Technical Analysis  
-                        </li>
-                         
-                    </ol>
-                </div>
+    <div class="container">
+        <header class="bg-primary text-white text-center p-3 mb-3">
+            <h1 class="display-4">Daniel Morris</h1>
+        </header>
 
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Main</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                </ul>
             </div>
-        
-            <div id = "project">
-                <h2></h2><a href="">
-                   Airplane Seat Manager 
-                </a></h2>
-                
-                <h3>December 2021 - class project</h3>
-                <div id = "description">
-                    Created a seat reservation program for a passenger airplane class in C++. Works with any size airplane and pulls data from a text file to create parameters.
-                </div>
-                <div id = grid_container>
-                    <ol>
-                        
-                        <li id = skill>
-                        VsCode  
-                        </li>
-                        
-                        <li id = skill>
-                        C++  
-                        </li>
-                        
-                        <li id = skill>
-                        File I/O  
-                        </li>
-                        
-                        <li id = skill>
-                        Algorithm Design  
-                        </li>
-                         
-                    </ol>
-                </div>
+        </nav>
 
+        <main id="main">
+            <section class="mb-5" id="projects">
+                <h2>Projects</h2>
 
-            </div>
-        
-            <div id = "project">
-                <h2></h2><a href="">
-                   Piazza Post Machine Learning Algorithm 
-                </a></h2>
-                
-                <h3>December 2022 - class project</h3>
-                <div id = "description">
-                    Developed a Map data structure with a Binary Search Tree as the underlying structure in C++. Wrote an intelligent program that can classify Piazza posts according to topic/label. Implemented NLP techniques to classify 2988 Piazza posts with 87.08% accuracy using log probability.
+                <div class="row">
+                    <!-- Open Catsket Project -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="https://eshaready.itch.io/open-catsket" target="_blank" class="text-primary">Open Catsket</a></h3>
+                                <h4 class="card-subtitle mb-2 text-muted">December 2024 | Major Design Project | Ann Arbor, MI</h4>
+                                <p class="card-text">Developed a Puzzle Platformer Video Game, written in C#, to explore the phenomenon of Schrödinger's cat using C# and Unity. Designed and developed the game over 7 weeks using iterative design patterns and agile methodologies. Achieved second place at The University of Michigan's Student-Made Game Showcase.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item badge badge-secondary">C#</li>
+                                    <li class="list-inline-item badge badge-secondary">Unity</li>
+                                    <li class="list-inline-item badge badge-secondary">Agile Methodologies</li>
+                                    <li class="list-inline-item badge badge-secondary">Game Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trading Algorithm Project -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="https://github.com/universaldestro/stock-webscraping" target="_blank" class="text-primary">Trading Algorithm</a></h3>
+                                <h4 class="card-subtitle mb-2 text-muted">January 2022 - Current | Personal</h4>
+                                <p class="card-text">I created a webscraping Algorithm in Python 3.0 that pulls data from Yahoo Finance to predict trends in the stock market. Data is scraped in real time.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item badge badge-secondary">VsCode</li>
+                                    <li class="list-inline-item badge badge-secondary">Beautiful Soup</li>
+                                    <li class="list-inline-item badge badge-secondary">Requests</li>
+                                    <li class="list-inline-item badge badge-secondary">Technical Analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Airplane Seat Manager Project -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="#" target="_blank" class="text-primary">Airplane Seat Manager</a></h3>
+                                <h4 class="card-subtitle mb-2 text-muted">December 2021 | Class Project</h4>
+                                <p class="card-text">Created a seat reservation program for a passenger airplane class in C++. Works with any size airplane and pulls data from a text file to create parameters.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item badge badge-secondary">VsCode</li>
+                                    <li class="list-inline-item badge badge-secondary">C++</li>
+                                    <li class="list-inline-item badge badge-secondary">File I/O</li>
+                                    <li class="list-inline-item badge badge-secondary">Algorithm Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Piazza Post Machine Learning Algorithm Project -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="#" target="_blank" class="text-primary">Piazza Post Machine Learning Algorithm</a></h3>
+                                <h4 class="card-subtitle mb-2 text-muted">December 2022 | Class Project</h4>
+                                <p class="card-text">Developed a Map data structure with a Binary Search Tree as the underlying structure in C++. Wrote an intelligent program that can classify Piazza posts according to topic/label. Implemented NLP techniques to classify 2988 Piazza posts with 87.08% accuracy using log probability.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item badge badge-secondary">C++</li>
+                                    <li class="list-inline-item badge badge-secondary">Data Structures</li>
+                                    <li class="list-inline-item badge badge-secondary">Machine Learning</li>
+                                    <li class="list-inline-item badge badge-secondary">Algorithm Design</li>
+                                    <li class="list-inline-item badge badge-secondary">NLP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JPMorgan Chase & Co Fellow Project -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="#" target="_blank" class="text-primary">JPMorgan Chase & Co Fellow</a></h3>
+                                <h4 class="card-subtitle mb-2 text-muted">June 2023 - August 2023 | Internship</h4>
+                                <p class="card-text">Created a web application catering to banking credentials management. Utilized React for the frontend and Spring Boot for the RESTful API backend. Employed PostgreSQL as the database system, leveraging JpaRepository for efficient data handling. Ensured the reliability and functionality of the backend system by testing it using Postman. Verified API endpoints, data integrity, and error handling mechanisms, contributing to the overall stability and quality of the banking credentials application.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item badge badge-secondary">React</li>
+                                    <li class="list-inline-item badge badge-secondary">Spring Boot</li>
+                                    <li class="list-inline-item badge badge-secondary">PostgreSQL</li>
+                                    <li class="list-inline-item badge badge-secondary">JpaRepository</li>
+                                    <li class="list-inline-item badge badge-secondary">Postman</li>
+                                    <li class="list-inline-item badge badge-secondary">Java</li>
+                                    <li class="list-inline-item badge badge-secondary">AI Development</li>
+                                    <li class="list-inline-item badge badge-secondary">Collaboration</li>
+                                    <li class="list-inline-item badge badge-secondary">Program Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id = grid_container>
-                    <ol>
-                        
-                        <li id = skill>
-                        C++  
-                        </li>
-                        
-                        <li id = skill>
-                        Data Structures  
-                        </li>
-                        
-                        <li id = skill>
-                        Machine Learning  
-                        </li>
-                        
-                        <li id = skill>
-                        Algorithm Design  
-                        </li>
-                        
-                        <li id = skill>
-                        Natural Language Processing  
-                        </li>
-                         
-                    </ol>
-                </div>
-
-
-            </div>
-        
-            <div id = "project">
-                <h2></h2><a href="">
-                   JPMorgan Chase &amp; Co Fellow 
-                </a></h2>
-                
-                <h3>June 2023 - August 2023 - internship</h3>
-                <div id = "description">
-                    Created a web application catering to banking credentials management. Utilized React for the frontend and Spring Boot for the RESTful API backend. Employed PostgreSQL as the database system, leveraging JpaRepository for efficient data handling. Ensured the reliability and functionality of the backend system by testing it using Postman. Verified API endpoints, data integrity, and error handling mechanisms, contributing to the overall stability and quality of the banking credentials application.
-                </div>
-                <div id = grid_container>
-                    <ol>
-                        
-                        <li id = skill>
-                        React  
-                        </li>
-                        
-                        <li id = skill>
-                        Spring Boot  
-                        </li>
-                        
-                        <li id = skill>
-                        PostgreSQL  
-                        </li>
-                        
-                        <li id = skill>
-                        JpaRepository  
-                        </li>
-                        
-                        <li id = skill>
-                        Postman  
-                        </li>
-                        
-                        <li id = skill>
-                        Java  
-                        </li>
-                        
-                        <li id = skill>
-                        AI Development  
-                        </li>
-                        
-                        <li id = skill>
-                        Collaboration  
-                        </li>
-                        
-                        <li id = skill>
-                        Program Design  
-                        </li>
-                         
-                    </ol>
-                </div>
-
-
-            </div>
-        
+            </section>
+        </main>
     </div>
-    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
